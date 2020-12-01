@@ -18,9 +18,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku": "npm run build && copy client/public/index.html dist/index.html",
+    "build": "cd client && react-scripts build"
   },
   "eslintConfig": {
     "extends": [
@@ -38,7 +39,7 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ],
-    "build": "cd client && react-scripts build"
+    ]
+
   }
 }
