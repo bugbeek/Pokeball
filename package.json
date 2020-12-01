@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "heroku": "npm run build && copy client/public/index.html dist/index.html",
-    "build": "cd client && react-scripts build"
+    "build": "cd pokerank && react-scripts build"
   },
   "eslintConfig": {
     "extends": [
